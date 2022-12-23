@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package twitter;
+
+option php_namespace = "GRPC\\Twitter";
+option php_metadata_namespace = "GRPC\\Twitter\\GPBMetadata";
+
+import "message.proto";
+
+service TwitterService {
+    // Add an account ID to collect metrics
+    rpc Add (twitter.dto.AddRequest) returns (twitter.dto.AddResponse) {
+    }
+
+    // Remove an existing account ID
+    rpc Remove (twitter.dto.RemoveRequest) returns (twitter.dto.RemoveResponse) {
+    }
+
+    // Show all available accounts
+    rpc All (twitter.dto.AllRequest) returns (twitter.dto.AllResponse) {
+    }
+}

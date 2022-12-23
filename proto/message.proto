@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package twitter.dto;
+
+option php_namespace = "GRPC\\Twitter";
+option php_metadata_namespace = "GRPC\\Twitter\\GPBMetadata";
+
+message AddRequest {
+    string id = 1;
+}
+
+message AddResponse {
+    bool status = 1;
+}
+
+message RemoveRequest {
+    string id = 1;
+}
+
+message RemoveResponse {
+    bool status = 1;
+}
+
+message AllRequest {
+
+}
+
+message AllResponse {
+    repeated string ids = 1;
+}
