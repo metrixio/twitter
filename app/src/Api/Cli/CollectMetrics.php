@@ -39,7 +39,7 @@ final class CollectMetrics extends Command
                 $queue->push(
                     TwitterDataCollector::class,
                     ['user_id' => $userId],
-                    (new Options())->withQueue('twitter')->withHeader('attempts', '3')
+                    (new Options())->withHeader('attempts', '3')
                 );
             }
 
