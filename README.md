@@ -1,5 +1,8 @@
 # Twitter metrics collector
 
+![twitter](https://user-images.githubusercontent.com/773481/209433204-d3a5efb4-80f8-495b-bfbf-f4806f4d094b.png)
+
+
 Welcome to the Twitter metrics collector!
 
 This package allows you to easily collect various metrics from Twitter, such as tweets, retweets, likes, followers,
