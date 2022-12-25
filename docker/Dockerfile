@@ -9,7 +9,29 @@ ARG BRANCH=master
 RUN git clone -b $BRANCH $REPOSITORY /app
 
 # Configure PHP project
-FROM spiralscout/php81-grpc:1.0.0
+FROM php:8.1.3-cli-alpine3.15 as backend
+
+RUN apk add --no-cache \
+        curl \
+        libcurl \
+        wget \
+        libzip-dev \
+        libmcrypt-dev \
+        libxslt-dev \
+        libxml2-dev \
+        icu-dev \
+        zip
+
+RUN docker-php-ext-install \
+        opcache \
+        zip \
+        xsl \
+        dom \
+        exif \
+        intl \
+        pcntl \
+        bcmath \
+        sockets
 
 COPY --from=git /app /app
 COPY --from=rr /usr/bin/rr /app
