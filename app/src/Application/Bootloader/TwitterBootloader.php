@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Application\Bootloader;
 
 use Abraham\TwitterOAuth\TwitterOAuth;
-use App\Application\Repository\AccountCacheRepository;
 use App\Application\Repository\AccountConfigRepository;
 use App\Application\Repository\AccountEvnRepository;
 use App\Application\TwitterAccountRegistry;
@@ -14,7 +13,6 @@ use App\Infrastructure\Twitter\ClientInterface;
 use App\Infrastructure\Twitter\TwitterConfig;
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Boot\EnvironmentInterface;
-use Spiral\Cache\CacheStorageProviderInterface;
 use Spiral\Config\ConfiguratorInterface;
 
 final class TwitterBootloader extends Bootloader
@@ -32,12 +30,10 @@ final class TwitterBootloader extends Bootloader
     private function initTwitterAccountRegistry(
         AccountConfigRepository $configRepository,
         AccountEvnRepository $envRepository,
-        AccountCacheRepository $cacheRepository
     ): TwitterAccountRegistry {
         $accounts = \array_merge(
             $configRepository->all(),
             $envRepository->all(),
-            $cacheRepository->all(),
         );
 
         return new TwitterAccountRegistry(

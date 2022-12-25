@@ -9,29 +9,36 @@ use Spiral\RoadRunner\Metrics\Collector;
 
 final class TwitterCollectors implements CollectorsInterface
 {
+    public const FOLLOWERS = 'twitter_followers';
+    public const TWEETS = 'twitter_tweets';
+    public const RETWEETS_COUNT = 'twitter_tweet_retweet_count';
+    public const REPLIES_COUNT = 'twitter_tweet_reply_count';
+    public const LIKES_COUNT = 'twitter_tweet_like_count';
+    public const QUOTES_COUNT = 'twitter_tweet_quote_count';
+
     public function getIterator(): \Traversable
     {
-        yield 'twitter_followers' => Collector::gauge()
+        yield self::FOLLOWERS => Collector::gauge()
             ->withHelp('Twitter followers.')
             ->withLabels('username');
 
-        yield 'twitter_tweets' => Collector::gauge()
+        yield self::TWEETS => Collector::gauge()
             ->withHelp('Twitter tweets.')
             ->withLabels('username');
 
-        yield 'twitter_tweet_retweet_count' => Collector::gauge()
+        yield self::RETWEETS_COUNT => Collector::gauge()
             ->withHelp('Twitter tweet retweet statistics.')
             ->withLabels('username', 'id');
 
-        yield 'twitter_tweet_reply_count' => Collector::gauge()
+        yield self::REPLIES_COUNT => Collector::gauge()
             ->withHelp('Twitter tweet reply statistics.')
             ->withLabels('username', 'id');
 
-        yield 'twitter_tweet_like_count' => Collector::gauge()
+        yield self::LIKES_COUNT => Collector::gauge()
             ->withHelp('Twitter likes reply statistics.')
             ->withLabels('username', 'id');
 
-        yield 'twitter_tweet_quote_count' => Collector::gauge()
+        yield self::QUOTES_COUNT => Collector::gauge()
             ->withHelp('Twitter likes quote statistics.')
             ->withLabels('username', 'id');
     }

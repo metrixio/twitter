@@ -49,6 +49,9 @@ final class CollectMetrics extends Command
         return self::SUCCESS;
     }
 
+    /**
+     * @return positive-int
+     */
     public function getInterval(): int
     {
         return \max(
