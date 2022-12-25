@@ -9,7 +9,7 @@ use App\Infrastructure\Twitter\TwitterConfig;
 final class AccountConfigRepository implements AccountRepositoryInterface
 {
     public function __construct(
-        private TwitterConfig $config,
+        private readonly TwitterConfig $config,
     ) {
     }
 

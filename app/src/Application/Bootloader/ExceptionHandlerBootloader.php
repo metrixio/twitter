@@ -6,7 +6,6 @@ namespace App\Application\Bootloader;
 
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Exceptions\ExceptionHandlerInterface;
-use Spiral\Exceptions\Renderer\ConsoleRenderer;
 use Spiral\Exceptions\Reporter\FileReporter;
 use Spiral\Exceptions\Reporter\LoggerReporter;
 use Spiral\Http\ErrorHandler\PlainRenderer;

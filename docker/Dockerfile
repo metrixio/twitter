@@ -27,7 +27,7 @@ EXPOSE 9001/tcp
 EXPOSE 2112/tcp
 
 LABEL org.opencontainers.image.source=$REPOSITORY
-LABEL org.opencontainers.image.description="MetrixIO Twitter"
+LABEL org.opencontainers.image.description="Twitter metrics collector - metrix.io"
 LABEL org.opencontainers.image.licenses=MIT
 
 CMD ./rr serve
