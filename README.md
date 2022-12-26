@@ -2,7 +2,9 @@
 
 ![twitter](https://user-images.githubusercontent.com/773481/209433204-d3a5efb4-80f8-495b-bfbf-f4806f4d094b.png)
 
-This tool lets you easily gather data about tweets, retweets, likes, followers, and more from Twitter. You can use it to track the performance of your own account or gather data for research or analysis. It works with Prometheus and Grafana to collect data from Twitter, store it in Prometheus, and create visualizations with Grafana. You can use Grafana to customize the data you collect and create dashboards that fit your needs.
+This tool lets you easily gather data about tweets, retweets, likes, followers, and more from Twitter. You can use it to track the performance of your own account or gather data for research or analysis. 
+
+It works with Prometheus and Grafana to collect data from Twitter, store it in Prometheus, and create visualizations with Grafana. You can use Grafana to customize the data you collect and create dashboards that fit your needs.
 
 We hope you find it helpful!
 
