@@ -60,6 +60,36 @@ services:
     restart: always
 ```
 
+### Local server
+
+```bash
+composer create-project metrixio/twitter
+```
+
+Define the repositories you want to track in `.env` file
+
+```dotenv
+# Twitter
+TWITTER_CONSUMER_KEY=xxx
+TWITTER_CONSUMER_SECRET=xxx
+TWITTER_ACCESS_TOKEN=xxx
+TWITTER_ACCESS_TOKEN_SECRET=xxx
+
+# Twitter account ids to follow (comma separated)
+TWITTER_ACCOUNTS=1234,123123
+```
+
+Once the project is installed and configured you can start application server:
+
+```bash
+./rr serve
+```
+
+Metrics will be available on http://127.0.0.1:2112.
+
+> **Note**:
+> To fix unable to open metrics page, change metrics address in RoadRunner config file to `127.0.0.1:2112`.
+
 -----
 
 The package is built with some of the best tools out there for PHP. It's powered by [Spiral Framework](https://github.com/spiral/framework/), which makes it super fast and efficient, and it uses [RoadRunner](https://github.com/roadrunner-server/roadrunner) as the server, which is a really great tool for collecting metrics data for Prometheus.
