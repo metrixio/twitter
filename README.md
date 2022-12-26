@@ -12,6 +12,8 @@ To get started with this package, you'll need to have a Twitter developer accoun
 
 It's a simple process that can help you track the performance of your own account or gather data for research or analysis purposes.
 
+Check out the documentation in the [dashboard](https://github.com/metrixio/dashboard) repository. That should give you all the details you need to get going.
+
 ```dotenv
 # Twitter
 TWITTER_CONSUMER_KEY=
