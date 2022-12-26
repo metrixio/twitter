@@ -62,4 +62,4 @@ services:
 
 -----
 
-The package is built with some of the best tools out there for PHP. It's powered by [Spiral Framework](https://github.com/spiral/framework/), which makes it super fast and efficient, and it uses RoadRunner as the server, which is a really great tool for collecting metrics data for Prometheus.
+The package is built with some of the best tools out there for PHP. It's powered by [Spiral Framework](https://github.com/spiral/framework/), which makes it super fast and efficient, and it uses [RoadRunner](https://github.com/roadrunner-server/roadrunner) as the server, which is a really great tool for collecting metrics data for Prometheus.
