@@ -2,26 +2,15 @@
 
 ![twitter](https://user-images.githubusercontent.com/773481/209433204-d3a5efb4-80f8-495b-bfbf-f4806f4d094b.png)
 
+This tool lets you easily gather data about tweets, retweets, likes, followers, and more from Twitter. You can use it to track the performance of your own account or gather data for research or analysis. It works with Prometheus and Grafana to collect data from Twitter, store it in Prometheus, and create visualizations with Grafana. You can use Grafana to customize the data you collect and create dashboards that fit your needs.
 
-Welcome to the Twitter metrics collector!
-
-This package allows you to easily collect various metrics from Twitter, such as tweets, retweets, likes, followers,
-and more. With this tool, you can track the performance of your own Twitter account, or gather data for research or
-analysis purposes.
-
-It is designed to work seamlessly with Prometheus and Grafana. It will collect data from Twitter and send it to
-Prometheus for storage, and then use Grafana to visualize the data in beautiful and informative dashboards. Grafana
-offers a variety of options for filtering and specifying the data you want to collect, so you can customize your metrics
-collection to fit your needs.
-
-It uses GRPC service to manage Twitter accounts. GRPC is a high-performance.
-
-We hope you find this package useful!
+We hope you find it helpful!
 
 ## Usage
 
-To use the package, you will need to have a Twitter developer account and create a Twitter API key. Once you have
-obtained your API key, you can use the package's functions to authenticate and start collecting data.
+To get started with this package, you'll need to have a Twitter developer account and create [Twitter API credentials](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html). Once you have those, you can begin collecting metrics data from Twitter. 
+
+It's a simple process that can help you track the performance of your own account or gather data for research or analysis purposes.
 
 ```dotenv
 # Twitter
