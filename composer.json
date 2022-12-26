@@ -1,5 +1,5 @@
 {
-    "name": "metrixop/twitter",
+    "name": "metrixio/twitter",
     "type": "project",
     "license": "MIT",
     "description": "Twitter metrics collector",
