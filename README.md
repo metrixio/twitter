@@ -1,5 +1,10 @@
 # Twitter metrics collector
 
+<a href="https://packagist.org/packages/metrixio/twitter"><img src="https://poser.pugx.org/metrixio/twitter/require/php"></a>
+<a href="https://packagist.org/packages/metrixio/twitter"><img src="https://poser.pugx.org/metrixio/twitter/version"></a>
+<a href="https://github.com/metrixio/twitter/actions"><img src="https://github.com/metrixio/twitter/actions/workflows/docker-image.yml/badge.svg"></a>
+<a href="https://packagist.org/packages/metrixio/twitter"><img src="https://poser.pugx.org/metrixio/twitter/downloads"></a>
+
 ![twitter](https://user-images.githubusercontent.com/773481/209433204-d3a5efb4-80f8-495b-bfbf-f4806f4d094b.png)
 
 This tool lets you easily gather data about tweets, retweets, likes, followers, and more from Twitter. You can use it to track the performance of your own account or gather data for research or analysis. 
