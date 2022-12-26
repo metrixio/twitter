@@ -2,7 +2,7 @@
     "name": "metrixio/twitter",
     "type": "project",
     "license": "MIT",
-    "description": "Twitter metrics collector",
+    "description": "This tool lets you easily gather data about tweets, retweets, likes, followers, and more from Twitter. You can use it to track the performance of your own account or gather data for research or analysis. It works with Prometheus and Grafana.",
     "homepage": "https://github.com/metrixio/twitter",
     "support": {
         "issues": "https://github.com/metrixio/twitter/issues",
