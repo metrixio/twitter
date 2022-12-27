@@ -24,6 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
+  "id": 4,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -47,7 +48,8 @@
                 "value": null
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -72,7 +74,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -123,7 +125,8 @@
                 "value": 10
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -148,7 +151,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -199,7 +202,8 @@
                 "value": 10
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -224,7 +228,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -275,7 +279,8 @@
                 "value": 10
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -300,7 +305,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -351,7 +356,8 @@
                 "value": 10
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -376,7 +382,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -427,7 +433,8 @@
                 "value": 10
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -452,7 +459,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -503,7 +510,8 @@
                 "value": 10
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -528,7 +536,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -835,7 +843,7 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -916,7 +924,7 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -997,7 +1005,7 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -1078,7 +1086,7 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "9.2.5",
+      "pluginVersion": "9.3.1",
       "targets": [
         {
           "datasource": {
@@ -1145,7 +1153,8 @@
                 "value": null
               }
             ]
-          }
+          },
+          "unit": "locale"
         },
         "overrides": []
       },
@@ -1186,10 +1195,19 @@
       "type": "timeseries"
     }
   ],
+  "refresh": "10s",
+  "schemaVersion": 37,
   "style": "dark",
+  "tags": [],
   "templating": {
     "list": [
       {
+        "allFormat": "glob",
+        "current": {
+          "selected": true,
+          "text": "elonmusk",
+          "value": "elonmusk"
+        },
         "datasource": {
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
@@ -1211,6 +1229,10 @@
         "type": "query"
       }
     ]
+  },
+  "time": {
+    "from": "now-1h",
+    "to": "now"
   },
   "title": "Twitter account stat"
 }
